@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>lista Telefonica-EBAC</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./Images/telefone-tipico-antigo.png" alt="Logo-Telefone"> 
-        </header>
-        <form id="Lista-Telefonica">
-            <input type="text" id="name" placeholder="name">
-            <input type="text" id="telephone" placeholder="telephone"> 
-            <button type="submit" id="Add">Add</button>
-            <button type="reset" id="Refresh">Refresh</button>
-            <img src="./Images/atualizar.png" alt="Refresh">
-            <img src="./Images/lata-de-lixo.png" alt="garbage">
-        </form>
-        <table cellsapcing="0">
-            <thead>
-            <tr>
-                <th>
-                    Contact Book
-                </th>
-            </tr>
-            </thead>
-        </table>
+<div class="container">
+    <div class="form-section">
+        <div class="icon">
+            <img src="./images/bate-papo.png" alt="Phone Icon">
+        </div>
+        <div class="input-fields">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="José">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Ex: (11) 3030-3200">
+            <button id="add" class="btn-add">Add</button>
+        </div>
     </div>
+    <div class="contacts-section">
+        <h3>Agenda de Contatos</h3>
+        <ul id="contacts-list">
+    </ul>
+        <div class="actions">
+            <button id="delete" class="btn-delete">Delete</button>
+            <button id="refresh" class="btn-refresh">Refresh</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
